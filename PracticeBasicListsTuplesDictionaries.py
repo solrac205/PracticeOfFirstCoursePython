@@ -75,3 +75,45 @@ print(MergeList[:])
 print(MergeList*3)
 
 # Video 7
+# The Tuples
+# Characteristics:
+# The tuples are not allowed to modify, It does not allow to append, extend, and not remove
+# Not Allow Find, A Tuple is not indexed.
+# A tuple allows extracting a portion, but this portion is a new tuple.
+# A tuple allows verification if an element exists in the tuple
+# The tuples are more speedy and require minus space in memory.
+# A tuple allows string formatting.
+# A tuple can be used as a password in a Dictionary, (The lists do not allow this).
+# Syntax:
+
+firstTuple = ("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo")
+mixTuple = ("Luis", 25, "Carlos", 45, "Jorge", 25)
+
+print(firstTuple[3])
+print(mixTuple[0:2])
+
+ConvertTupleToList = list(mixTuple)
+
+print(ConvertTupleToList[0:2])
+
+ConvertListToTuple = tuple(ConvertTupleToList)
+
+print(ConvertListToTuple[0:2])
+
+print("Carlos" in ConvertListToTuple)
+print("Pedro" in ConvertListToTuple)
+print(ConvertListToTuple.count(45))
+print(ConvertListToTuple.count(25))
+print(len(ConvertListToTuple))
+# Is possible create a tuple with one element.
+
+UnitTuple = ("Unique Element",)
+
+print(len(UnitTuple))
+
+UnpackTuple = (2022, 11, 9)
+year, month, day = UnpackTuple
+print(year, month, day)
+
+# Finish Video 8
+
