@@ -117,3 +117,48 @@ print(year, month, day)
 
 # Finish Video 8
 
+# The Dictionaries
+# It is a Data Structure that allows saving values of  different types including Lists, Tuples, and Other Dictionaries
+# The values are structured with a Key and a Value
+# The elements of a dictionary are not ordered.
+
+FirstDictionary = {"Alemania": "Berlin", "Francia": "Paris", "Guatemala": "Guatemala", "España": "Madrid"}
+print(FirstDictionary)
+
+# Add Elements to a Dictionary
+FirstDictionary["Italia"] = "Lisboa"  # The error is controlled, and it is by the way for another operation next.
+print(FirstDictionary)
+
+# Edit Elements to a Dictionary
+FirstDictionary["Italia"] = "Roma"
+print(FirstDictionary)
+
+# Remove a Element
+del FirstDictionary["España"]
+print(FirstDictionary)
+
+# Allow different types of keys and values.
+mixDictionary = {"Pais": "Guatemala", "Edad": 45, 1: "Order"}
+print(mixDictionary)
+
+# Dictionary with Tuple
+dictionaryTuple = {"Nombre": "Carlos", "Modelos": [2009, 2005, 2011, 2022]}
+print(dictionaryTuple)
+print(dictionaryTuple["Modelos"])
+print(dictionaryTuple["Modelos"][1])
+
+dictionaryDictionary = {"Nombre": "Carlos", "Modelos": {"Años": [2009, 2005, 2011, 2022]}}
+print(dictionaryDictionary)
+print(dictionaryDictionary["Modelos"]["Años"])
+print(dictionaryDictionary["Modelos"]["Años"][2])
+
+# Others Methods
+print(dictionaryDictionary.keys())
+print(dictionaryDictionary["Modelos"].keys())
+
+print(dictionaryDictionary.values())
+print(dictionaryDictionary["Modelos"].values())
+print(len(dictionaryDictionary))
+
+# Finish Video 9
+
