@@ -61,3 +61,31 @@ print(word, end=' ')
 
 # Finish Video 14
 
+def validate_email(email_validate):
+    account = ''
+    domain = ''
+    char_mail = ''
+
+    for i in email_validate:
+        if (i == '@') and (char_mail != '@'):
+            char_mail = i
+        if (i != '@') and (char_mail == ''):
+            account += i
+        if (i != '@') and (char_mail == '@'):
+            domain += i
+
+    if (char_mail=='@') and (account!='') and (domain!='') and \
+       (len(account) + len(domain) + len(char_mail) == len(email_validate)):
+           return f'Email is correct: {account}{char_mail}{domain}'
+    else:
+            return f'Email is invalid: {email_validate}'
+
+
+clear()
+print('Test to validate Email Address')
+print('************************************')
+print(validate_email('carlos@gmail.com'))
+print('************************************')
+print(validate_email('carlos#gmail.com'))
+
+# Finish Video 15
