@@ -58,3 +58,50 @@ else:
     print('Value is invalid')
 
 # Finish Video 17
+
+sleep(2)
+clear()
+# Commands Continue, pass, else in Loops
+
+for char in "python":
+    if char == 'h':
+        continue
+    print(f'See the letter: {char}')
+
+sleep(2)
+clear()
+
+name = 'Pildoras Informaticas'
+count = 0
+
+for i in name:
+    if i ==' ':
+        continue
+    count += 1
+
+print(f'Letters Number: {count}')
+
+sleep(2)
+clear()
+
+for i in range(5):
+    pass
+    print(i)
+print('pass return null and does not affect the loop')
+
+sleep(2)
+clear()
+
+text = input('Enter a text to find the character: ')
+char = input('character to find:')
+
+for i in text:
+    if i==char:
+        ExistsChar = True
+        break
+else:
+    ExistsChar = False
+
+print(f'Exists character sought: {ExistsChar}')
+
+# Finish Video 18
